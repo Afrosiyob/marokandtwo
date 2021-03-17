@@ -51,6 +51,7 @@ $( document ).ready( function () {
 
         const cards = document.querySelectorAll( '.drag_body_inner_item' );
         const columns = document.querySelectorAll( '.drag_column_body' );
+
         var card_item;
 
         const dragStart = function () {
