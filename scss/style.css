@@ -31,6 +31,56 @@ img {
   margin: 10px;
 }
 
+.custom-progress-modal .modal-header {
+  position: relative;
+}
+
+.custom-progress-modal .modal-header .modal-title::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  background-color: #007bff;
+  left: 0;
+  top: 15px;
+}
+
+.custom-progress-modal .modal-body .top-content .top-item p {
+  text-align: justify;
+}
+
+.custom-progress-modal .modal-body .top-content .top-item .icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+}
+
+.custom-progress-modal .modal-body .top-content .top-item .icon-box i {
+  color: white;
+}
+
+.custom-progress-modal .modal-body .top-content .under-item p {
+  text-align: justify;
+}
+
+.custom-progress-box .left-content .left-item .top-item p {
+  text-align: justify;
+}
+
+.custom-progress-box .left-content .left-item .top-item .icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+}
+
+.custom-progress-box .left-content .left-item .top-item .icon-box i {
+  color: white;
+}
+
+.custom-progress-box .left-content .left-item .under-item p {
+  text-align: justify;
+}
+
 .left-modal-info {
   position: relative;
   height: 600px;

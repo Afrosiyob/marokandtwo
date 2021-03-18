@@ -124,4 +124,49 @@ $( document ).ready( function () {
 
     dragAndDrop();
 
+
+
+    // add table
+
+
+    const inputs = document.querySelectorAll( '.modal-table-input' );
+
+
+    const addBtn = document.querySelector( '.add-btn' );
+
+
+
+    const addDataTable = function () {
+        const tableTrs = document.querySelectorAll( '.table-tr' );
+        const numbers = [];
+        const data = [];
+        // $('#myTable > tbody:last-child').append('<tr>...</tr><tr>...</tr>');
+        inputs.forEach( ( input, index ) => {
+            data[ index ] = input.value;
+
+        } );
+
+        tableTrs.forEach( ( tableTr, index ) => {
+            numbers[ index ] = index + 1;
+        } );
+
+
+        $( '.top-table > tbody:last-child' ).append( ` <tr class="table-tr">
+        <th scope="row"> ${ numbers[ numbers.length - 1 ] + 1 } </th>
+
+        <td> ${ data[ 0 ] } </td>
+        <td>${ data[ 1 ] } </td>
+        <td>${ data[ 2 ] }</td>
+
+        <td class="d-flex justify-content-end"> <button type="button" class="btn btn-primary mr-2">
+          <i class="far fa-edit color-white font-weight-bold"></i>
+        </button>
+            <button type="button" class="btn btn-primary btn-remove">
+              <i class="fas fa-times color-white font-weight-bold "></i>
+        </button> </td>
+    </tr>`);
+    }
+
+    addBtn.addEventListener( 'click', addDataTable );
+
 } );
