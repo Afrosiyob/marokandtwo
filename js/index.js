@@ -134,17 +134,23 @@ $( document ).ready( function () {
 
     const addBtn = document.querySelector( '.add-btn' );
 
-
+    let addData = [];
 
     const addDataTable = function () {
+
         const tableTrs = document.querySelectorAll( '.table-tr' );
         const numbers = [];
         const data = [];
+
         // $('#myTable > tbody:last-child').append('<tr>...</tr><tr>...</tr>');
         inputs.forEach( ( input, index ) => {
             data[ index ] = input.value;
-
+            addData.push( {
+                [ input.name ]: input.value
+            } );
         } );
+
+        console.log( addData );
 
         tableTrs.forEach( ( tableTr, index ) => {
             numbers[ index ] = index + 1;
@@ -168,5 +174,17 @@ $( document ).ready( function () {
     }
 
     addBtn.addEventListener( 'click', addDataTable );
+
+
+    let fruits = [];
+
+    fruits.push( {
+        "name": "hello",
+        "lastName": "world"
+    } );
+
+
+    console.log( fruits );
+
 
 } );
