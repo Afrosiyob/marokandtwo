@@ -31,6 +31,88 @@
 
     <div class="container py-5">
 
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+        Launch demo modal
+      </button>
+        <div class="modal fade custom-progress-modal" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+                    </div>
+                    <div class="modal-body p-5">
+
+
+
+
+
+
+
+                        <div class="under-add-content ">
+
+                            <table class="table">
+
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td>
+                                            <div class="form-group">
+
+                                                <select class="form-control w-100 modal-table-input" name="first">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                          </select>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group">
+
+                                                <input type="text" name="second" class="form-control w-50 modal-table-input" id="input-2" aria-describedby="input-2">
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group">
+
+                                                <input type="text" name="third" class="form-control w-25 modal-table-input" id="input-3" aria-describedby="input-3">
+
+                                            </div>
+                                        </td>
+                                        <td> <button type="button" class="btn btn-primary add-btn">
+                                      <i class="far fa-plus color-white font-weight-bold"></i>
+                                    </button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+             Close
+           </button>
+                        <button type="button" class="btn btn-primary">
+             Save changes
+           </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
@@ -50,133 +132,131 @@
                     <div class="modal-body p-5">
 
 
-
-                        <div class="top-content shadow rounded p-3 mb-5">
-                            <div class="top-item d-flex align-items-center mb-2">
-                                <div class="icon-box  rounded d-flex  justify-content-center align-items-center">
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                </div>
-
-                                <div class="ml-3">
-                                    <p class=" ml-2 mb-3 text-muted w-100 p-0 font-weight-bold ">
-                                        Moddani nomini kiritishni boshlang va tizim sizni moddalar ro'yxatidan moddani tanlashingizni suraydi
-                                    </p>
-                                    <p class=" ml-2  text-muted w-100 p-0 font-weight-bold ">
-                                        Qo'shimcha moddalar qo'shish uchun " <span class="text-primary font-weight-bold "> +   </span> " belgisini bosing
-                                    </p>
+                        <div class="acc-wrap mb-3">
+                            <div class="acc-top px-2 shadow py-3 text-white font-weight-bold pl-2 rounded">
+                                <i class="fas fa-angle-down"></i> this is top
+                            </div>
+                            <div class="acc-body px-3">
+                                <div class="border border-info">
+                                    <table class="table  rounded table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
+                        </div>
+                        <div class="acc-wrap mb-3">
+                            <div class="acc-top px-2 shadow py-3 text-white font-weight-bold pl-2 rounded">
+                                <i class="fas fa-angle-down"></i> this is top
+                            </div>
+                            <div class="acc-body px-3">
+                                <div class="border border-info">
+                                    <table class="table  rounded table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
 
-
+                        <div class="acc-wrap mb-3">
+                            <div class="acc-top px-2 shadow py-3 text-white font-weight-bold pl-2 rounded">
+                                <i class="fas fa-angle-down"></i> this is top
+                            </div>
+                            <div class="acc-body px-3">
+                                <div class="border border-info">
+                                    <table class="table  rounded table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
 
 
-                        <div class="under-content mb-3">
-
-                            <!-- <form> -->
 
 
-                            <table class="table top-table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th colspan="2" scope="col">Handle</th>
-                                        <!-- <th scope="col">action</th> -->
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="table-tr">
-                                        <th scope="row">1</th>
-                                        <td> kok </td>
-                                        <td> jij </td>
-                                        <td> lo </td>
-                                        <td class="d-flex justify-content-end"> <button type="button" class="btn btn-primary mr-2">
-                                          <i class="far fa-edit color-white font-weight-bold"></i>
-                                        </button>
-                                            <button type="button" class="btn btn-primary btn-remove">
-                                              <i class="fas fa-times color-white font-weight-bold "></i>
-                                        </button> </td>
-                                    </tr>
-                                    <tr class="table-tr">
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td class="d-flex justify-content-end"> <button type="button" class="btn btn-primary mr-2">
-                                          <i class="far fa-edit color-white font-weight-bold"></i>
-                                        </button>
-                                            <button type="button" class="btn btn-primary btn-remove">
-                                              <i class="fas fa-times color-white font-weight-bold "></i>
-                                        </button> </td>
-                                    </tr>
-                                    <tr class="table-tr">
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                        <td class="d-flex justify-content-end"> <button type="button" class="btn btn-primary mr-2">
-                                          <i class="far fa-edit color-white font-weight-bold"></i>
-                                        </button>
-                                            <button type="button" class="btn btn-primary btn-remove">
-                                              <i class="fas fa-times color-white font-weight-bold "></i>
-                                        </button> </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <!-- <input type="submit"> -->
-
-                            <!-- </form> -->
-                        </div>
 
 
-                        <div class="under-add-content ">
 
-                            <table class="table">
-
-                                <tbody>
-                                    <tr>
-                                        <th scope="row"></th>
-                                        <td>
-                                            <div class="form-group">
-
-                                                <select class="form-control w-100 modal-table-input" name="first">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                              </select>
-
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-group">
-
-                                                <input type="text" name="second" class="form-control w-50 modal-table-input" id="input-2" aria-describedby="input-2">
-
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-group">
-
-                                                <input type="text" name="third" class="form-control w-25 modal-table-input" id="input-3" aria-describedby="input-3">
-
-                                            </div>
-                                        </td>
-                                        <td> <button type="button" class="btn btn-primary add-btn">
-                                          <i class="far fa-plus color-white font-weight-bold"></i>
-                                        </button>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-
-
-                        </div>
 
                     </div>
                     <div class="modal-footer">

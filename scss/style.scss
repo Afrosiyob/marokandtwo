@@ -30,6 +30,23 @@ img {
     margin: 10px;
 }
 
+.acc-wrap {
+    // background-color: red;
+    .acc-top {
+        background-color: rgb(69, 191, 232);
+        i {
+            transition: all 0.2s linear;
+        }
+        .angle-down {
+            transform: rotate(180deg);
+        }
+    }
+    .acc-body {
+        // background-color: green;
+        display: none;
+    }
+}
+
 .custom-progress-modal {
     .modal-header {
         position: relative;

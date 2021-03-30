@@ -1,42 +1,56 @@
-$( document ).ready( function () {
+$(document).ready(function() {
+
+
+    const accordion = $('.acc-top');
+
+    $(accordion).click(function() {
+        $(this).next().slideToggle(500);
+        accordion.not(this).next().slideUp(500);
+        $(this).children("i").toggleClass("angle-down");
+        accordion.not(this).children("i").removeClass("angle-down");
+    });
+
+
+
+
 
     // Quil Text Editor
 
-    var quill = new Quill( '#editor', {
+    var quill = new Quill('#editor', {
         placeholder: 'Compose an epic...',
         theme: 'snow',
-    } );
+    });
 
     // Multiple images preview in browser
-    var imagesPreview = function ( input, placeToInsertImagePreview ) {
+    var imagesPreview = function(input, placeToInsertImagePreview) {
 
-        if ( input.files ) {
+        if (input.files) {
             var filesAmount = input.files.length;
 
 
-            for ( const index in input.files ) {
-                if ( Object.hasOwnProperty.call( input.files, index ) ) {
-                    const element = input.files[ index ];
-                    console.log( element );
+            for (const index in input.files) {
+                if (Object.hasOwnProperty.call(input.files, index)) {
+                    const element = input.files[index];
+                    console.log(element);
 
                 }
             }
 
-            for ( i = 0; i < filesAmount; i++ ) {
+            for (i = 0; i < filesAmount; i++) {
                 var reader = new FileReader();
-                reader.onload = function ( event ) {
-                    $( $.parseHTML( '<img>' ) ).attr( {
+                reader.onload = function(event) {
+                    $($.parseHTML('<img>')).attr({
                         'src': event.target.result,
-                    } ).appendTo( placeToInsertImagePreview );
+                    }).appendTo(placeToInsertImagePreview);
                 }
-                reader.readAsDataURL( input.files[ i ] );
+                reader.readAsDataURL(input.files[i]);
             }
         }
     };
 
-    $( '#gallery-photo-add' ).on( 'change', function () {
-        imagesPreview( this, 'div.gallery' );
-    } );
+    $('#gallery-photo-add').on('change', function() {
+        imagesPreview(this, 'div.gallery');
+    });
 
 
 
@@ -49,69 +63,69 @@ $( document ).ready( function () {
     const dragAndDrop = () => {
 
 
-        const cards = document.querySelectorAll( '.drag_body_inner_item' );
-        const columns = document.querySelectorAll( '.drag_column_body' );
+        const cards = document.querySelectorAll('.drag_body_inner_item');
+        const columns = document.querySelectorAll('.drag_column_body');
 
         var card_item;
 
-        const dragStart = function () {
+        const dragStart = function() {
 
             card_item = this;
 
-            setTimeout( () => {
-                this.classList.add( 'hide_card' );
-            }, 0 );
+            setTimeout(() => {
+                this.classList.add('hide_card');
+            }, 0);
         }
 
 
 
 
-        const dragEnd = function () {
+        const dragEnd = function() {
             card_item = null;
-            setTimeout( () => {
-                this.classList.remove( 'hide_card' );
-            }, 0 );
+            setTimeout(() => {
+                this.classList.remove('hide_card');
+            }, 0);
         }
 
-        cards.forEach( card => {
-            card.addEventListener( "dragstart", dragStart );
-            card.addEventListener( 'dragend', dragEnd );
-        } );
+        cards.forEach(card => {
+            card.addEventListener("dragstart", dragStart);
+            card.addEventListener('dragend', dragEnd);
+        });
 
 
 
 
-        const dragOver = function ( e ) {
+        const dragOver = function(e) {
             e.preventDefault();
-            console.log( "over" );
+            console.log("over");
         }
 
-        const dragEnter = function () {
-            console.log( "enter" );
+        const dragEnter = function() {
+            console.log("enter");
 
             // this.parentElement.classList.add( 'hovered_card' );
         }
 
-        const dragLeave = function () {
-            console.log( "leave" );
+        const dragLeave = function() {
+            console.log("leave");
 
             // this.parentElement.classList.remove( 'hovered_card' );
         }
 
-        const dragDrop = function ( e ) {
-            console.log( e );
+        const dragDrop = function(e) {
+            console.log(e);
 
-            this.append( card_item );
+            this.append(card_item);
         }
 
-        columns.forEach( column => {
+        columns.forEach(column => {
 
 
-            column.addEventListener( 'dragover', dragOver );
-            column.addEventListener( 'dragenter', dragEnter );
-            column.addEventListener( 'dragleave', dragLeave );
-            column.addEventListener( 'drop', dragDrop );
-        } );
+            column.addEventListener('dragover', dragOver);
+            column.addEventListener('dragenter', dragEnter);
+            column.addEventListener('dragleave', dragLeave);
+            column.addEventListener('drop', dragDrop);
+        });
 
 
 
@@ -129,35 +143,35 @@ $( document ).ready( function () {
     // add table
 
 
-    const inputs = document.querySelectorAll( '.modal-table-input' );
+    const inputs = document.querySelectorAll('.modal-table-input');
 
 
-    const addBtn = document.querySelector( '.add-btn' );
+    const addBtn = document.querySelector('.add-btn');
 
     let addData = [];
 
-    const addDataTable = function () {
+    const addDataTable = function() {
 
-        const tableTrs = document.querySelectorAll( '.table-tr' );
+        const tableTrs = document.querySelectorAll('.table-tr');
         const numbers = [];
         const data = [];
 
         // $('#myTable > tbody:last-child').append('<tr>...</tr><tr>...</tr>');
-        inputs.forEach( ( input, index ) => {
-            data[ index ] = input.value;
-            addData.push( {
-                [ input.name ]: input.value
-            } );
-        } );
+        inputs.forEach((input, index) => {
+            data[index] = input.value;
+            addData.push({
+                [input.name]: input.value
+            });
+        });
 
-        console.log( addData );
+        console.log(addData);
 
-        tableTrs.forEach( ( tableTr, index ) => {
-            numbers[ index ] = index + 1;
-        } );
+        tableTrs.forEach((tableTr, index) => {
+            numbers[index] = index + 1;
+        });
 
 
-        $( '.top-table > tbody:last-child' ).append( ` <tr class="table-tr">
+        $('.top-table > tbody:last-child').append(` <tr class="table-tr">
         <th scope="row"> ${ numbers[ numbers.length - 1 ] + 1 } </th>
 
         <td> ${ data[ 0 ] } </td>
@@ -173,18 +187,18 @@ $( document ).ready( function () {
     </tr>`);
     }
 
-    addBtn.addEventListener( 'click', addDataTable );
+    addBtn.addEventListener('click', addDataTable);
 
 
     let fruits = [];
 
-    fruits.push( {
+    fruits.push({
         "name": "hello",
         "lastName": "world"
-    } );
+    });
 
 
-    console.log( fruits );
+    console.log(fruits);
 
 
-} );
+});
