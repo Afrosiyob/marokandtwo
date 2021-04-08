@@ -11,6 +11,33 @@ $(document).ready(function() {
     });
 
 
+    let start, end, startArray, endArray;
+
+    $("#start").change(function(e) {
+        e.preventDefault();
+        start = e.target.value.split("-");
+        startArray = start.map(element => parseInt(element));
+        console.log(startArray);
+    });
+
+    $("#end").change(function(e) {
+        e.preventDefault();
+        end = e.target.value.split("-");
+        endArray = end.map(element => parseInt(element));
+        console.log(endArray);
+
+
+        if (endArray[0] < startArray[0]) {
+            alert("yil kichkina");
+        } else if (endArray[1] < startArray[1]) {
+            alert("oy kichkina")
+        } else if (endArray[2] <= startArray[2]) {
+            alert("kun kichkina");
+        } else {
+            alert("hammasi joyida");
+        }
+
+    });
 
 
 
