@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>this is title</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <!-- Include stylesheet -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+    <style>
+        div.inprogress {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: orange;
+            margin-right: 5px;
+        }
+        
+        .user-image {
+            position: relative;
+        }
+        
+        .user-image span.left-line {
+            position: absolute;
+            background-color: lightgrey;
+            height: 1px;
+            width: 23px;
+            top: 50%;
+            /* bottom: 20px; */
+            right: 100%;
+        }
+        
+        .user-image span.under-line {
+            position: absolute;
+            /* background-color: red; */
+            height: 140px;
+            width: 1px;
+            top: 100%;
+            right: 50%;
+        }
+        
+        .child-box-inner {
+            position: relative;
+            /* background-color: lime; */
+        }
+        
+        .left-border-line {
+            position: absolute;
+            left: -23px;
+            top: -17px;
+            bottom: 0;
+            /* height: 55%; */
+            width: 1px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="p-3 rounded border">
+
+                    <div class="tree-box">
+
+
+                        <!-- <div class="child-box">
+                            <div class="inner-box d-flex align-content-center align-items-center">
+                                <div class="user-image">
+
+                                    <img class="m-0" src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400_opt_1/e2360545048867.582562e85b60c.png" style="object-fit: cover; width: 50px; height: 50px; border-radius: 50%; border: 2px solid lightgrey;" alt="">
+                                    <span class="under-line"></span>
+                                </div>
+                                <div class="right-info ml-3">
+                                    <h4>SSP SSP SSP</h4>
+                                    <p class="text-muted">test</p>
+                                </div>
+                            </div>
+
+                            <div class="child-box ml-5 my-3">
+
+                                <div class="top-info d-flex justify-content-between p-3 rounded" style="background-color: #F5FCFF;">
+                                    <p>421245678</p>
+                                    <div class="d-flex align-items-center">
+
+                                        <div class="inprogress"></div>
+                                        <p>in progress</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="d-flex px-1">
+                                    <div class="time d-flex align-items-center">
+                                        <i class="far fa-clock mr-2"></i>
+                                        <p>time</p>
+                                    </div>
+                                    <div class="date ml-3 d-flex align-items-center">
+                                        <i class="fas fa-calendar-alt mr-2"></i>
+                                        <p>02.06.2020</p>
+                                    </div>
+                                </div>
+
+                                <div class="inner-box my-3 d-flex align-content-center align-items-center">
+                                    <div class="user-image">
+                                        <span class="left-line"></span>
+                                        <img class="m-0" src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400_opt_1/e2360545048867.582562e85b60c.png" style="object-fit: cover; width: 50px; height: 50px; border-radius: 50%; border: 2px solid lightgrey;" alt="">
+                                        <span class="under-line"></span>
+                                    </div>
+                                    <div class="right-info ml-3">
+                                        <h4>SSP SSP SSP</h4>
+                                        <p class="text-muted">test</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="child-box ml-5 my-3">
+
+                                    <div class="top-info d-flex justify-content-between p-3 rounded" style="background-color: #F5FCFF;">
+                                        <p>421245678</p>
+                                        <div class="d-flex align-items-center">
+
+                                            <div class="inprogress"></div>
+                                            <p>in progress</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex px-1">
+                                        <div class="time d-flex align-items-center">
+                                            <i class="far fa-clock mr-2"></i>
+                                            <p>time</p>
+                                        </div>
+                                        <div class="date ml-3 d-flex align-items-center">
+                                            <i class="fas fa-calendar-alt mr-2"></i>
+                                            <p>02.06.2020</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="inner-box my-3 d-flex align-content-center align-items-center">
+                                        <div class="user-image">
+                                            <img class="m-0" src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400_opt_1/e2360545048867.582562e85b60c.png" style="object-fit: cover; width: 50px; height: 50px; border-radius: 50%; border: 2px solid lightgrey;" alt="">
+                                        </div>
+                                        <div class="right-info ml-3">
+                                            <h4>SSP SSP SSP</h4>
+                                            <p class="text-muted">test</p>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="child-box ml-5 my-3">
+
+                                <div class="top-info d-flex justify-content-between p-3 rounded" style="background-color: #F5FCFF;">
+                                    <p>421245678</p>
+                                    <div class="d-flex align-items-center">
+
+                                        <div class="inprogress"></div>
+                                        <p>in progress</p>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex px-1">
+                                    <div class="time d-flex align-items-center">
+                                        <i class="far fa-clock mr-2"></i>
+                                        <p>time</p>
+                                    </div>
+                                    <div class="date ml-3 d-flex align-items-center">
+                                        <i class="fas fa-calendar-alt mr-2"></i>
+                                        <p>02.06.2020</p>
+                                    </div>
+                                </div>
+
+                                <div class="inner-box my-3 d-flex align-content-center align-items-center">
+                                    <div class="user-image">
+                                        <img class="m-0" src="https://mir-cdn.behance.net/v1/rendition/project_modules/1400_opt_1/e2360545048867.582562e85b60c.png" style="object-fit: cover; width: 50px; height: 50px; border-radius: 50%; border: 2px solid lightgrey;" alt="">
+                                    </div>
+                                    <div class="right-info ml-3">
+                                        <h4>SSP SSP SSP</h4>
+                                        <p class="text-muted">test</p>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+
+                        </div> -->
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+
+    <!-- Index JS -->
+    <script src="js/index.js" async defer></script>
+</body>
+
+</html>

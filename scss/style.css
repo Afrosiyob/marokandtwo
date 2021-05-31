@@ -1,8 +1,8 @@
 * {
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a,
@@ -13,211 +13,209 @@ h3,
 h4,
 h5,
 h6 {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 ul,
 ol {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
 }
 
 .acc-wrap .acc-top {
-    background-color: #45bfe8;
+  background-color: #45bfe8;
 }
 
 .acc-wrap .acc-top i {
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .acc-wrap .acc-top .angle-down {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .acc-wrap .acc-body {
-    display: none;
+  display: none;
 }
 
 .custom-progress-modal .modal-header {
-    position: relative;
+  position: relative;
 }
 
 .custom-progress-modal .modal-header .modal-title::before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 30px;
-    background-color: #007bff;
-    left: 0;
-    top: 15px;
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  background-color: #007bff;
+  left: 0;
+  top: 15px;
 }
 
 .custom-progress-modal .modal-body .top-content .top-item p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .custom-progress-modal .modal-body .top-content .top-item .icon-box {
-    width: 40px;
-    height: 40px;
-    background-color: orange;
+  width: 40px;
+  height: 40px;
+  background-color: orange;
 }
 
 .custom-progress-modal .modal-body .top-content .top-item .icon-box i {
-    color: white;
+  color: white;
 }
 
 .custom-progress-modal .modal-body .top-content .under-item p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .custom-progress-box .left-content .left-item .top-item p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .custom-progress-box .left-content .left-item .top-item .icon-box {
-    width: 40px;
-    height: 40px;
-    background-color: orange;
+  width: 40px;
+  height: 40px;
+  background-color: orange;
 }
 
 .custom-progress-box .left-content .left-item .top-item .icon-box i {
-    color: white;
+  color: white;
 }
 
 .custom-progress-box .left-content .left-item .under-item p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .left-modal-info {
-    position: relative;
-    height: 600px;
-    overflow-y: scroll;
+  position: relative;
+  height: 600px;
+  overflow-y: scroll;
 }
 
 .left-modal-info .left-modal-body {
-    position: relative;
+  position: relative;
 }
 
 .left-modal-info .left-modal-body .under-comment-info {
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .left-modal-info .left-modal-body .under-comment-info .left-comment-info img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .drag_and_drop_wrap_box .header button.avatar-btn {
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .drag_and_drop_wrap_box .header button.avatar-btn img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .drag_and_drop_wrap_box .drag_column {
-    background-color: #f4f5f7;
+  background-color: #f4f5f7;
 }
 
 .drag_and_drop_wrap_box .drag_column .drag_column_body {
-    height: 100vh;
-    overflow-y: scroll;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .drag_and_drop_wrap_box .drag_column .drag_column_body .drag_body_inner_item .drag_body_inner_item_author .left_item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .drag_and_drop_wrap_box .drag_column .drag_column_body .drag_body_inner_item .drag_body_inner_item_author .left_item .bookmark {
-    background-color: #0bb90b;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    padding: 5px 7px;
-    border-radius: 3px;
+  background-color: #0bb90b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 5px 7px;
+  border-radius: 3px;
 }
 
 .drag_and_drop_wrap_box .drag_column .drag_column_body .drag_body_inner_item .drag_body_inner_item_author .left_item .bookmark i {
-    color: white;
+  color: white;
 }
 
 .drag_and_drop_wrap_box .drag_column .drag_column_body .drag_body_inner_item .drag_body_inner_item_author .right_item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .drag_and_drop_wrap_box .drag_column .drag_column_body .drag_body_inner_item .drag_body_inner_item_author .right_item .notification i {
-    color: red;
+  color: red;
 }
 
 .drag_and_drop_wrap_box .drag_column .drag_column_body .drag_body_inner_item .drag_body_inner_item_author .right_item .author img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .hide_card {
-    display: none;
+  display: none;
 }
 
 .hovered_card {
-    background-color: red !important;
+  background-color: red !important;
 }
-
-
 /*# sourceMappingURL=style.css.map */
